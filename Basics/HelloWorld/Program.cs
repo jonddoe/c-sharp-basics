@@ -5,10 +5,10 @@ namespace HelloWorld
     //todo: fix the code
     class Program
     {
-        static string Hello => "";
+        static string Hello = "Hello World";
         static void Main(string[] args)
         {
-            Console.WriteLine(); //Expected result "Hello World"
+            Console.WriteLine(Hello); //Expected result "Hello World"
             Console.ReadKey();
         }
     }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net.Http.Headers;
 
 namespace Output_09
 {
@@ -7,13 +8,13 @@ namespace Output_09
         //todo: using function return hello world and display it.
         static void Main(string[] args)
         {
-
+            Console.WriteLine(Concat("hello ", "world"));
             Console.ReadKey();
         }
 
         static string Concat(string w1, string w2)
         {
-            return string.Concat(w1, w1);
+            return string.Concat(w1, w2);
         }
     }
 }
