@@ -28,12 +28,12 @@ namespace FormatCurrency_12
         //change FormatCurrency method accordingly.
         static string FormatCurrency(double price)
         {
-            return string.Empty;
+            return "£" + price;
         }
 
         static double CalculateSalesTax(double price)
         {
-            return price * 0.2;
+            return double.Parse((price * 0.2).ToString("N2"));
         }
     }
 }
