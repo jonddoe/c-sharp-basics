@@ -15,13 +15,13 @@ namespace SadFor
 
             for (double i = 0; i < 10; i++)
             {
-                if (Math.Round(Math.Sqrt(i),2) > 2.5)
+                if (Math.Round(Math.Sqrt(i), 2) > 2.5)
                 {
                     Console.WriteLine(i);
-                   
-                } 
-            }Console.Read();
+                }
+            }
 
+            Console.Read();
         }
     }
 }
