@@ -33,13 +33,13 @@ namespace ConvertCurrency_14
         //change this method accordingly
         static double ConvertToUSD(double price)
         {
-            return double.Parse((price * brlToUsd * (1 + foreignTransactionFee)).ToString("N2"));
+            return Math.Round((price * brlToUsd * (1 + foreignTransactionFee)),2);
         }
 
         //change this method accordingly
         static double ConvertToBRL(double price)
         {
-            return double.Parse((price * usdToBrl * (1 + foreignTransactionFee)).ToString("N2"));
+            return Math.Round((price * usdToBrl * (1 + foreignTransactionFee)),2);
         }
     }
 }
