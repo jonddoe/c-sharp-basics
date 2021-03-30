@@ -28,7 +28,7 @@ namespace Excercise6
             }
 
             Console.WriteLine($"sum of numbers: {addedNumbers.Sum()}");
-            
+
             Console.ReadKey();
         }
 
