@@ -12,11 +12,13 @@ namespace VariablesAndNames
             Cars = 100; //cars
             SeatsInACar = 4.0; //seats in a car
             Drivers = 28; // drivers
-             Passengers = 90; // passengers
-             CarsNotDriven = Cars - Drivers;//cars_not_driven  // free cars
-             CarsDriven = Cars - CarsNotDriven;//cars_driven ; // cars driven at the moment
-             CarpoolCapacity = CarsDriven*SeatsInACar; //carpool_capacity = // carpool capacity
-             AveragePassengersPerCar = Math.Round(CarpoolCapacity / Passengers,2);//average_passengers_per_car = // average passengers per car
+            Passengers = 90; // passengers
+            CarsNotDriven = Cars - Drivers; //cars_not_driven  // free cars
+            CarsDriven = Cars - CarsNotDriven; //cars_driven ; // cars driven at the moment
+            CarpoolCapacity = CarsDriven * SeatsInACar; //carpool_capacity = // carpool capacity
+            AveragePassengersPerCar =
+                Math.Round(CarpoolCapacity / Passengers,
+                    2); //average_passengers_per_car = // average passengers per car
 
             Console.WriteLine("There are " + Cars + " cars available.");
             Console.WriteLine("There are only " + Drivers + " drivers available.");
