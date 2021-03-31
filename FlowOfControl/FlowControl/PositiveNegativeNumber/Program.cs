@@ -7,7 +7,7 @@ namespace PositiveNegativeNumber
         static void Main(string[] args)
         {
             Console.WriteLine("Enter the number.");
-            var input = int.Parse(Console.ReadLine() ?? string.Empty);
+            var input = int.Parse(Console.ReadLine());
 
 
             if (input > 0)
