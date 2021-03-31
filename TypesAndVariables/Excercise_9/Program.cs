@@ -18,7 +18,7 @@ namespace Excercise_9
             var totalSecondsPassed = Convert.ToDecimal(hoursPassed) * 3600 + minutesPassed * 60 + secondsPassed;
             var totalHoursPassed = Convert.ToDecimal(totalSecondsPassed) / 3600;
             var distanceInKilometers = Convert.ToDecimal(distanceInMeters) / 1000;
-          
+
             var metersPerSecond = Convert.ToDecimal(distanceInMeters) / totalSecondsPassed;
             var kilometersPerHour = distanceInKilometers / totalHoursPassed;
             var milesPerHour = Convert.ToDecimal(distanceInMeters) / 1609 / totalHoursPassed;
