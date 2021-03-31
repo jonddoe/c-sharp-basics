@@ -13,70 +13,68 @@ namespace TenBillion
             var input = Console.ReadLine();
 
 
-            long longInput;
-            if (long.TryParse(input,out longInput))
+            if (long.TryParse(input, out var longInput))
+            {
+               
+                if (longInput < 0)
                 {
-                    //todo - check if input is less than zero
-                    if (longInput < 0)
-                    {
-                        longInput *= -1;
-                    }
-                    
-                if (longInput >= 10000000000L)
-                    {
-                        Console.WriteLine("Number is greater or equals 10,000,000,000!");
-                        Console.ReadLine();
-
+                    longInput *= -1;
                 }
-                    else
-                    {
-                        int digits = 1;
-                        if (longInput >= 10 && longInput < 100)
-                        {
-                            digits = 2;
-                        }
-                        else if (longInput >= 100 && longInput < 1000)
-                        {
-                            digits = 3;
-                        }
-                        else if (longInput >= 1000 && longInput < 10000)
-                        {
-                            digits = 4;
-                        }
-                        else if (longInput >= 10000 && longInput < 100000)
-                        {
-                            digits = 5;
-                        }
-                        else if (longInput >= 100000 && longInput < 1000000)
-                        {
-                            digits = 6;
-                        }
-                        else if (longInput >= 1000000 && longInput < 10000000)
-                        {
-                            digits = 7;
-                        }
-                        else if (longInput >= 10000000 && longInput < 100000000)
-                        {
-                            digits = 8;
-                        }
-                        else if (longInput >= 100000000 && longInput < 1000000000)
-                        {
-                            digits = 9;
-                        }
-                        else if (longInput >= 1000000000 && longInput < 10000000000L)
-                        {
-                            digits = 10;
-                        }
-                        Console.WriteLine("Number of digits in the number: " + digits);
-                        Console.ReadLine();
-                    }
+
+                if (longInput >= 10000000000L)
+                {
+                    Console.WriteLine("Number is greater or equals 10,000,000,000!");
+                    Console.ReadLine();
                 }
                 else
                 {
-                    Console.WriteLine("The number is not a long");
-                    Console.ReadLine();
-            }
+                    var digits = 1;
+                    if (longInput >= 10 && longInput < 100)
+                    {
+                        digits = 2;
+                    }
+                    else if (longInput >= 100 && longInput < 1000)
+                    {
+                        digits = 3;
+                    }
+                    else if (longInput >= 1000 && longInput < 10000)
+                    {
+                        digits = 4;
+                    }
+                    else if (longInput >= 10000 && longInput < 100000)
+                    {
+                        digits = 5;
+                    }
+                    else if (longInput >= 100000 && longInput < 1000000)
+                    {
+                        digits = 6;
+                    }
+                    else if (longInput >= 1000000 && longInput < 10000000)
+                    {
+                        digits = 7;
+                    }
+                    else if (longInput >= 10000000 && longInput < 100000000)
+                    {
+                        digits = 8;
+                    }
+                    else if (longInput >= 100000000 && longInput < 1000000000)
+                    {
+                        digits = 9;
+                    }
+                    else if (longInput >= 1000000000 && longInput < 10000000000L)
+                    {
+                        digits = 10;
+                    }
 
+                    Console.WriteLine("Number of digits in the number: " + digits);
+                    Console.ReadLine();
+                }
+            }
+            else
+            {
+                Console.WriteLine("The number is not a long");
+                Console.ReadLine();
+            }
         }
     }
 }
