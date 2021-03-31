@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargestNumber", "LargestNum
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TenBillion", "TenBillion\TenBillion.csproj", "{77AB50C0-F0DA-46B0-8299-7AB0B9404B03}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_4", "ConsoleApp1\Exercise_4.csproj", "{B8CAB43D-6183-4048-9A73-42D6186277DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{77AB50C0-F0DA-46B0-8299-7AB0B9404B03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77AB50C0-F0DA-46B0-8299-7AB0B9404B03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77AB50C0-F0DA-46B0-8299-7AB0B9404B03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8CAB43D-6183-4048-9A73-42D6186277DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8CAB43D-6183-4048-9A73-42D6186277DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8CAB43D-6183-4048-9A73-42D6186277DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8CAB43D-6183-4048-9A73-42D6186277DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
