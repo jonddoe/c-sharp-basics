@@ -24,7 +24,7 @@ namespace Exercise6
                     copyOfRandomValueArray[i] = randomValueArray1[i];
                 }
             }
-            
+
 
             for (var i = randomValueArray1.Length; i == randomValueArray1.Length; i++)
             {
@@ -32,10 +32,8 @@ namespace Exercise6
             }
 
             Console.WriteLine($"Array 1: {string.Join(" ", randomValueArray1)}");
-            
             Console.WriteLine($"Array 2: {string.Join(" ", copyOfRandomValueArray)}");
             Console.ReadLine();
-            
         }
     }
 }
