@@ -13,12 +13,7 @@ namespace Exercise_1
 
             Boolean isFifteen()
             {
-                if (num == 15 || num2 == 15 || num + num2 == 15 || num - num2 == 15 || num2 - num == 15)
-                {
-                    return true;
-                }
-
-                return false;
+                return num == 15 || num2 == 15 || num + num2 == 15 || num - num2 == 15 || num2 - num == 15;
             }
 
             Console.WriteLine(isFifteen());
