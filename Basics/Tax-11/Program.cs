@@ -2,7 +2,6 @@
 
 namespace Tax_11
 {
-
     /**
      * Sales Tax
      *
@@ -17,18 +16,18 @@ namespace Tax_11
             var price = 19.99;
             var salesTax = CalculateSalesTax(price);
 
+
             Console.WriteLine("Product: " + product);
             Console.WriteLine("Price: £" + price);
             Console.WriteLine("Sales tax: £" + salesTax);
             Console.WriteLine("Total: £" + (price + salesTax));
             Console.ReadKey();
-
         }
 
         //change only this method accordingly.
         static double CalculateSalesTax(double price)
         {
-            return price;
+            return double.Parse((price * 0.21).ToString("N2"));
         }
     }
 }
