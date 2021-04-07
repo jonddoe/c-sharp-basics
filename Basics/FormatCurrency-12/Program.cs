@@ -33,7 +33,7 @@ namespace FormatCurrency_12
 
         static double CalculateSalesTax(double price)
         {
-            return double.Parse((price * 0.2).ToString("N2"));
+            return Math.Round((price * 0.2),2);
         }
     }
 }

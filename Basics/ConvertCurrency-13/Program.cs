@@ -25,7 +25,8 @@ namespace ConvertCurrency_13
         //change this method accordingly
         static double ConvertToUSD(double price)
         {
-            return price * 1.4;
+            return Math.Round(price * 1.4
+                ,2);
         }
     }
 }

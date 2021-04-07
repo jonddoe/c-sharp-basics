@@ -27,7 +27,7 @@ namespace Tax_11
         //change only this method accordingly.
         static double CalculateSalesTax(double price)
         {
-            return double.Parse((price * 0.21).ToString("N2"));
+            return Math.Round((price * 0.21),2);
         }
     }
 }
