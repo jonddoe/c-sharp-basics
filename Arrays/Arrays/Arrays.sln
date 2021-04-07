@@ -15,7 +15,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise5", "Exercise5\Exer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe", "TicTacToe\TicTacToe.csproj", "{F0A071BC-6F7E-4D2A-B972-0B430ACD6181}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise6", "Exercise6\Exercise6.csproj", "{040276C2-103B-4799-9BD1-5A5BE28B1095}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise6", "Exercise6\Exercise6.csproj", "{040276C2-103B-4799-9BD1-5A5BE28B1095}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise8", "Exercise8\Exercise8.csproj", "{C0476138-D091-4079-A830-6C568B9B3D3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{040276C2-103B-4799-9BD1-5A5BE28B1095}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{040276C2-103B-4799-9BD1-5A5BE28B1095}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{040276C2-103B-4799-9BD1-5A5BE28B1095}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0476138-D091-4079-A830-6C568B9B3D3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0476138-D091-4079-A830-6C568B9B3D3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0476138-D091-4079-A830-6C568B9B3D3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0476138-D091-4079-A830-6C568B9B3D3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
