@@ -9,13 +9,14 @@ namespace Exercise1
             int i;
 
             Console.WriteLine("The first 10 natural numbers are: ");
+           // Console.ReadLine();
 
-            /*
-            todo - write a program in C# to display the first 10 natural numbers
-            for (......) {
-              Console.WriteLine(i);
-            }
-            */
-        }
+            for (i = 1; i <= 10; i++)
+            {
+                Console.Write($"{i} ");
+                //Console.Read();
+
+            }Console.ReadLine();
     }
+        } 
 }
