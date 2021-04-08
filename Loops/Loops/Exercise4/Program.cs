@@ -11,7 +11,7 @@ namespace Exercise4
 
             for (var i = 0; i < vowels.Length; i++)
             {
-                Console.Write(vowels[i]+" ");
+                Console.Write(vowels[i] + " ");
             }
 
             Console.WriteLine();
