@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Exercise3
 {
@@ -13,20 +14,29 @@ namespace Exercise3
             Console.WriteLine("Which number index would you like to find?");
 
             int searchFor = Convert.ToInt16(Console.ReadLine());
-            
 
-            int i;
+
+            var i = 0;
             var foundIt = false;
 
-            for (i = 0; i < integers.Length; i++) {
-                //todo - search for integer - break when you have found what you searched for
+            for (var j = 0; j < integers.Length; j++)
+            {
+                if (integers[j] != searchFor) continue;
+                i = j;
+                foundIt = true;
+                break;
             }
 
-            if (foundIt) {
+            if (foundIt)
+            {
                 Console.WriteLine("Found " + searchFor + " at index " + i);
-            } else {
+            }
+            else
+            {
                 Console.WriteLine(searchFor + " is not in the array");
             }
+
+            Console.ReadLine();
         }
 
         static int[] RandomIntegers(int n)
