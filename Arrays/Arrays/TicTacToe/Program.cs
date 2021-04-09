@@ -93,7 +93,6 @@ namespace TicTacToe
             previousTurn = GetTurn() == 'X' ? "O" : "X";
             var winner = "";
 
-
             if (IsWinningCombination() && char.Parse(previousTurn) == 'X')
             {
                 winner = "X";
@@ -164,7 +163,6 @@ namespace TicTacToe
             IsTie();
             Console.WriteLine($"\nIt is {GetTurn()}'s turn\n\nEnter coordinate on X axis: ");
             int.TryParse(Console.ReadLine(), out var x);
-
 
             while (x > 2 || x < 0)
             {
