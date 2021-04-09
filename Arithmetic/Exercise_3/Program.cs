@@ -19,7 +19,6 @@ namespace Exercise_3
             double sum = 0;
             var count = 0;
 
-
             for (var number = num; number <= num2; ++number)
             {
                 sum += number;
