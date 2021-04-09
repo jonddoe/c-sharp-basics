@@ -14,8 +14,6 @@ namespace Exercise3
             Console.WriteLine("Which number index would you like to find?");
 
             int searchFor = Convert.ToInt16(Console.ReadLine());
-
-
             var i = 0;
             var foundIt = false;
 
