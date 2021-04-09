@@ -21,13 +21,13 @@ namespace Exercise_6
                                   false == cozawoza;
 
                 if (coza) Console.Write("Coza ");
-                if (cozaloza) Console.Write("CozaLoza ");
-                if (loza) Console.Write("Loza ");
-                if (cozawoza) Console.Write("CozaWoza ");
-                if (woza) Console.Write("Woza ");
-                if (notCozaWoza) Console.Write(i + " ");
-                if (false == coza && false == loza && false == woza && false == cozaloza &&
-                    false == cozawoza && (i % 11 != 0)) Console.Write(i + " ");
+                else if (cozaloza) Console.Write("CozaLoza ");
+                else if (loza) Console.Write("Loza ");
+                else if (cozawoza) Console.Write("CozaWoza ");
+                else if (woza) Console.Write("Woza ");
+                else if (notCozaWoza) Console.Write(i + " ");
+                else if (coza == false && loza == false && woza == false && cozaloza == false &&
+                         cozawoza == false && (i % 11 != 0)) Console.Write(i + " ");
                 if (i % 11 == 0) Console.WriteLine();
             }
         }
