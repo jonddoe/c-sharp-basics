@@ -10,7 +10,6 @@ namespace Exercise1
 
             Console.WriteLine("The first 10 natural numbers are: ");
 
-
             for (i = 1; i <= 10; i++)
             {
                 Console.Write($"{i} ");
