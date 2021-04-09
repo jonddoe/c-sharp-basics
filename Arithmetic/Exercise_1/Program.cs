@@ -18,7 +18,6 @@ namespace Exercise_1
             }
 
             Console.WriteLine(IsFifteen());
-            
         }
     }
 }
