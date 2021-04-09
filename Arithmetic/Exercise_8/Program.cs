@@ -23,9 +23,7 @@ namespace Exercise_8
                 Console.WriteLine(
                     $"{employeeId} salary is: {salary:0.00}\n{employeeId} overtime salary is: {overtimeSalary:0.00} \n{employeeId} total salary is: {salary + overtimeSalary:0.00}\n");
             }
-
-            else
-                Console.WriteLine($"Your salary is: {salary:0.00}");
+            else Console.WriteLine($"Your salary is: {salary:0.00}");
         }
 
         static void Main(string[] args)
