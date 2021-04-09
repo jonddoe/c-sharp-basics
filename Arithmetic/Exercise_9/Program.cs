@@ -16,7 +16,7 @@ namespace Exercise_9
             Console.WriteLine($"Your BMI is: {Math.Round(bmi, 2)}");
             switch (bmi)
             {
-                case < 18.5:
+                case <= 18.5:
                     Console.WriteLine("You're underweight!");
                     break;
                 case > 18.5 and < 24.9:
