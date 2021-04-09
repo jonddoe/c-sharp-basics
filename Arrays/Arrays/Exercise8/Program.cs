@@ -60,7 +60,6 @@ namespace Exercise8
                     Console.WriteLine($"\nYou won!\nword was: {word}");
                     Console.WriteLine("\nWant to play again? y/n?");
 
-
                     if (Console.ReadLine() == "y")
                     {
                         Game();
@@ -70,7 +69,6 @@ namespace Exercise8
 
                     break;
                 }
-
 
                 Console.ReadKey();
             }
