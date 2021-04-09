@@ -14,22 +14,23 @@ namespace Exercise6
                 var fizz = (i % 3 == 0) && ((i % 5 != 0));
                 var buzz = (i % 5 == 0) && (i % 3 != 0);
                 var fizzBuzz = (i % 3 == 0) && (i % 5 == 0);
+
                 if (fizz)
                 {
                     Console.Write("Fizz ");
                 }
 
-                if (buzz)
+                else  if (buzz)
                 {
                     Console.Write("Buzz ");
                 }
 
-                if (fizzBuzz)
+                else  if (fizzBuzz)
                 {
                     Console.Write("FizzBuzz ");
                 }
 
-                if (fizz == false && buzz == false && fizzBuzz == false)
+                else if (fizz == false && buzz == false && fizzBuzz == false)
                 {
                     Console.Write(i + " ");
                 }
