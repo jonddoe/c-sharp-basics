@@ -11,7 +11,6 @@ namespace Exercise_5
             var num = rnd.Next(100);
             var guessCount = 2;
 
-
             do
             {
                 Console.WriteLine($"I'm thinking of a number between 1-100. You have {guessCount} guesses.");
