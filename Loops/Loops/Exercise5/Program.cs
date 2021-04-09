@@ -6,12 +6,15 @@ namespace Exercise5
     {
         static void Main(string[] args)
         {
-            var outputLength = 30;
+            const int outputLength = 30;
+            var separator = "";
+
             Console.WriteLine("Enter the first word: ");
             var firstWord = Console.ReadLine();
+
             Console.WriteLine("Enter the second word: ");
             var secondWord = Console.ReadLine();
-            var separator = "";
+
             for (var i = outputLength; i > firstWord.Length + secondWord.Length; i--)
             {
                 separator += ".";
