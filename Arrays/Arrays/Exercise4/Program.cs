@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,7 +9,6 @@ namespace Exercise4
 {
     class Program
     {
-        //TODO: Write a C# program to test if an array contains a specific value.
         private static void Main(string[] args)
         {
             int[] myArray =
@@ -17,16 +17,25 @@ namespace Exercise4
                 1458, 2458, 1254, 1472, 2365,
                 1456, 2265, 1457, 2456
             };
-
-            const int valueToCheck = 1245;
+            var contains = false;
+            const int valueToCheck = 1456;
             foreach (var i in myArray)
             {
-                if (i != valueToCheck) continue;
-                Console.WriteLine("Contains!");
-                Console.ReadLine();
+                if (i == valueToCheck)
+                {
+                    contains = true;
+                }
             }
 
-            Console.WriteLine("Does not contain!");
+            if (contains)
+            {
+                Console.WriteLine("Contains!");
+            }
+            else
+            {
+                Console.WriteLine("Doesn't contain!");
+            }
+
             Console.ReadLine();
         }
     }
