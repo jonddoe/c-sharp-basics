@@ -6,51 +6,30 @@ namespace Exercise8
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(AsciiFigure());
-            Console.ReadLine();
-
-
-
-
-
+            Console.WriteLine("Enter a number: ");
+            Int32.TryParse(Console.ReadLine(), out var num);
+            Console.WriteLine(AsciiFigure(num));
         }
 
-
-        static string AsciiFigure()
+        static string AsciiFigure(int num)
         {
-            int num = 5;
             var figure = "";
-            for (int i = 1; i <= (num - 1); i++)
+
+            for (int i = 0; i < num; i++)
             {
-                if (i==1)
+                for (int j = num - 1; j > i; j--)
                 {
-                    for (int j = 1; j <= ((num) * (num))-1; j++)
-                    {
-                        figure += "/";
-
-                    }
-                    for (int l = 1; l <= ((num) * (num)) -1; l++)
-                    {
-                        figure += "\\";
-
-                    }
-                    figure += "\n";
+                    figure += "////";
                 }
 
-                for (int j = 1; j <= ((num) * (num )) - ((i * (num)) )-1; j++)
+                for (int j = 1; j <= i * 2; j++)
                 {
-                    figure += "/";
-
+                    figure += "****";
                 }
 
-                for (int k = 1; k < (((num ) * i) * 2); k++)
+                for (int j = num - 1; j > i; j--)
                 {
-                    figure += "*";
-                }
-                for (int l = 1; l <= (((num) * (num)) - (i * num)); l++)
-                {
-                    figure += "\\" ;
-
+                    figure += "\\\\\\\\";
                 }
 
                 figure += "\n";
@@ -59,5 +38,4 @@ namespace Exercise8
             return figure;
         }
     }
-
 }
