@@ -11,12 +11,16 @@
 
         public void Fill()
         {
-            
+            if (_fuelLevel < 70)
+            {
+                _fuelLevel++;
+            }
+           
         }
 
         public void DecreaseLevel()
         {
-            
+            _fuelLevel--;
         }
     }
 }
