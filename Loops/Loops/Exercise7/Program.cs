@@ -35,7 +35,7 @@ namespace Exercise7
                         points += rolledValue;
                     }
 
-                    if (rolledValue == 1)
+                    else if (rolledValue == 1)
                     {
                         points = 0;
                         Console.WriteLine($"You rolled a {rolledValue}!\nYou got {points} points. \nPlay again? y/n");
