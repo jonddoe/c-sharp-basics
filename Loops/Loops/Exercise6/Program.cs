@@ -19,17 +19,14 @@ namespace Exercise6
                 {
                     Console.Write("Fizz ");
                 }
-
-                else  if (buzz)
+                else if (buzz)
                 {
                     Console.Write("Buzz ");
                 }
-
-                else  if (fizzBuzz)
+                else if (fizzBuzz)
                 {
                     Console.Write("FizzBuzz ");
                 }
-
                 else if (fizz == false && buzz == false && fizzBuzz == false)
                 {
                     Console.Write(i + " ");
