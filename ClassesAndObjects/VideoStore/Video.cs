@@ -36,6 +36,5 @@ namespace VideoStore
         {
             return Math.Round(RatingList.Sum() / RatingList.Count);
         }
-        
     }
 }

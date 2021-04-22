@@ -4,7 +4,7 @@ namespace VideoStore
 {
     class Program
     {
-        private const int _countOfMovies = 3;
+        private const int CountOfMovies = 3;
         private static VideoStore _videoStore = new VideoStore();
 
         private static void Main(string[] args)
@@ -49,7 +49,7 @@ namespace VideoStore
 
         private static void FillVideoStore()
         {
-            for (var i = 0; i < _countOfMovies; i++)
+            for (var i = 0; i < CountOfMovies; i++)
             {
                 Console.WriteLine("Enter movie name");
                 string movieName = Console.ReadLine();
