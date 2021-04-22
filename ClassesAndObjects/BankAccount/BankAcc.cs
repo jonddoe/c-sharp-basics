@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 
 namespace BankAccount
 {
@@ -14,7 +13,7 @@ namespace BankAccount
             {
                 return _name + ", -$" + (Math.Abs(_balance).ToString("F2"));
             }
-           
+
             return _name + ", $" + _balance.ToString("F2");
         }
     }
