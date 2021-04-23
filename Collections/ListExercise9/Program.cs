@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ListExercise9
 {
@@ -18,6 +15,7 @@ namespace ListExercise9
                 "White",
                 "Pink"
             };
+            Console.WriteLine("First List:");
             Console.WriteLine(string.Join(",", firstList));
 
             var secondList = new List<string>
@@ -28,10 +26,14 @@ namespace ListExercise9
                 "White",
                 "Pink"
             };
-
+            Console.WriteLine("Second List:");
             Console.WriteLine(string.Join(",", secondList));
-            //TODO: Write a C# program to join two lists.
-            //...
+
+            firstList.AddRange(secondList);
+
+            Console.WriteLine("Joined List:");
+            Console.WriteLine(string.Join(",", firstList));
+            Console.Read();
         }
     }
 }
