@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Exercise2
 {
@@ -12,34 +9,32 @@ namespace Exercise2
         {
             var mySet = new HashSet<string>();
 
-            //TODO: add 5 values to Set.
             mySet.Add("Red");
             mySet.Add("Black");
             mySet.Add("Yellow");
-            //..
+            mySet.Add("Blue");
+            mySet.Add("White");
 
             Console.WriteLine("Should have 5 elements: ");
-            Console.WriteLine(string.Join(",", mySet)); //Pay attention on order!
+            Console.WriteLine(string.Join(",", mySet));
 
-            //TODO: iterate through all elements in set
-            /*
-            for (...) {
-                Console.WriteLine(element);
-            }
-            */
+            mySet.Clear();
 
-            //TODO: remove all values from set
             Console.WriteLine("Is mySet empty: ");
             Console.WriteLine(mySet.Count == 0);
 
-            //TODO: check if it is possible to add duplicated values
+            foreach (var c in mySet)
+            {
+                Console.WriteLine(c);
+            }
+
             mySet.Add("Green");
             mySet.Add("Orange");
             mySet.Add("Green");
             mySet.Add("Purple");
 
             Console.WriteLine(string.Join(",", mySet));
+            Console.Read();
         }
     }
-}
 }
