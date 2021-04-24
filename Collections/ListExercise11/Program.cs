@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ListExercise11
 {
@@ -10,19 +7,28 @@ namespace ListExercise11
     {
         static void Main(string[] args)
         {
-            //TODO: Create an List with string elements
+            var colorList = new List<string>();
+            var baseList = new List<string>()
+                {"Red", "Black", "Yellow", "Blue", "White", "Orange", "Purple", "Green", "Pink", "Cyan"};
 
-            //TODO: Add 10 values to list
+            colorList.AddRange(baseList);
 
-            //TODO: Add new value at 5th position
+            colorList.RemoveAt(4);
+            colorList.Insert(4, "Brown");
 
-            //TODO: Change value at last position (Calculate last position programmatically)
+            colorList.RemoveAt(colorList.Count - 1);
+            colorList.Insert(colorList.Count, "Gray");
 
-            //TODO: Sort your list in alphabetical order
+            colorList.Sort();
 
-            //TODO: Check if your list contains "Foobar" element
+            Console.WriteLine(colorList.Contains("Foobar") ? "Contains" : "Doesn't Contain");
 
-            //TODO: Print each element of list using loop
+            foreach (var c in colorList)
+            {
+                Console.WriteLine(c);
+            }
+
+            Console.Read();
         }
     }
 }
