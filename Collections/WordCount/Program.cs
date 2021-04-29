@@ -8,7 +8,7 @@ namespace WordCount
     {
         static void Main(string[] args)
         {
-            var readText = File.ReadAllLines("D:\\VS Projects\\c-sharp-basics\\Collections\\WordCount\\lear.txt");
+            var readText = File.ReadAllLines("lear.txt");
 
             var textSplitWithSpace = Regex.Replace(string.Join(" ", readText), @"(\s)\s+", " ");
             var wordArray = textSplitWithSpace.Split(' ');
@@ -17,7 +17,6 @@ namespace WordCount
             Console.WriteLine($"Lines = {readText.Length}");
             Console.WriteLine($"Words = {wordArray.Length}");
             Console.WriteLine($"Chars = {charArray.Length}");
-
             Console.Read();
         }
     }
