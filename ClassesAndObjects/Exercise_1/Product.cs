@@ -12,14 +12,17 @@
            _price = priceAtStart;
 
        }
+
         public void ChangeAmount(int amount)
         {
             _amount = amount;
         }
+
         public void ChangePrice(double price)
         {
             _price = price;
         }
+
         public string PrintProduct()
         {
             return $"{_name}, {_price} EUR, {_amount} Units";
