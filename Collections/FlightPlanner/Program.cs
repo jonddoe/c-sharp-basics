@@ -74,16 +74,17 @@ namespace FlightPlanner
                     {
                         Console.WriteLine(c);
                     }
+
                     break;
 
-                    case "#":
-                        Environment.Exit(1);
-                        break;
-                }
+                case "#":
+                    Environment.Exit(1);
+                    break;
+            }
 
-                Console.Read();
+            Console.Read();
         }
-        
+
         public static string SelectStartCity(string[] flights, int chosenCityNum)
         {
             var city = "";
@@ -111,6 +112,7 @@ namespace FlightPlanner
 
             return city;
         }
+
         public static HashSet<string> GetCities(string[] flights)
         {
             var cities = new HashSet<string>();
@@ -122,6 +124,7 @@ namespace FlightPlanner
 
             return cities;
         }
+
         public static Dictionary<string, int> GetFlights(string[] flights)
         {
             var flightsDic = new Dictionary<string, int>();
