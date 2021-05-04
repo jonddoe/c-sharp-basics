@@ -1,19 +1,19 @@
-using System;
+﻿using System;
 
 namespace DragRace
 {
-    public class Bmw : ICar
+    public class Lada : ICar
     {
         private int _currentSpeed = 0;
 
         public void SpeedUp()
         {
-            _currentSpeed += 11;
+            _currentSpeed += 5;
         }
 
         public void SlowDown()
         {
-            _currentSpeed -= 11;
+            _currentSpeed -= 5;
         }
 
         public string ShowCurrentSpeed()
@@ -23,7 +23,7 @@ namespace DragRace
 
         public void StartEngine()
         {
-            Console.WriteLine("Rrrrrrr.....");
+            Console.WriteLine("Brbrbrr.....");
         }
     }
 }
