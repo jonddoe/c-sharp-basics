@@ -1,21 +1,32 @@
 namespace AdApp
 {
-    public class Hoarding: Advert
+    public class Hoarding : Advert
     {
-        private int rate;
-        //per day
-        private int numDays;
+        private readonly int _rate;
+        private readonly int _numDays;
+        private readonly int _fee;
 
-        public Hoarding(int fee) : base(fee)
+        public Hoarding(int fee, int rate, int numDays, bool isPrimeLocation) : base(fee)
         {
+            _rate = rate;
+            _numDays = numDays;
+            _fee = fee;
+            if (isPrimeLocation)
+            {
+                _rate += _rate / 2;
+            }
+
+            base.SetFee(Cost());
         }
 
-        public new int Cost() {
-            return base.Cost();
+        public new int Cost()
+        {
+            return _fee + (_rate * _numDays);
         }
 
-        public override string ToString() {
-            return base.ToString();
+        public override string ToString()
+        {
+            return "\nHoarding: Fee = " + Cost();
         }
     }
 }

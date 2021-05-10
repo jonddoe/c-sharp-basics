@@ -5,24 +5,26 @@ namespace AdApp
 {
     public class Campaign
     {
-        private List<Advert> campaign;
+        private readonly List<Advert> _campaign;
 
-        public Campaign() {
-            campaign = new List<Advert>();
+        public Campaign()
+        {
+            _campaign = new List<Advert>();
         }
 
-        public void AddAdvert(Advert a) {
-            campaign.Add(a);
+        public void AddAdvert(Advert a)
+        {
+            _campaign.Add(a);
         }
 
         public int GetCost()
         {
-            return campaign.Sum(item => item.Cost());
+            return _campaign.Sum(item => item.Cost());
         }
 
         public override string ToString()
         {
-            return "Advert Campaign" + campaign + "\nTotal Cost = "+ GetCost();
+            return "Advert Campaign" + string.Join(" ", _campaign) + "\nTotal Cost = " + GetCost();
         }
     }
 }
