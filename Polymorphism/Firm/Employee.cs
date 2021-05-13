@@ -1,0 +1,28 @@
+namespace Firm
+{
+    public class Employee : StaffMember
+    {
+        private string _socialSecurityNumber;
+
+        protected double payRate;
+
+        public Employee(string eName, string eAddress, string ePhone, string socSecNumber, double rate) : base(eName,
+            eAddress, ePhone)
+        {
+            _socialSecurityNumber = socSecNumber;
+            payRate = rate;
+        }
+
+        public override string ToString()
+        {
+            var result = base.ToString();
+            result += "\nSocial Security Number: " + _socialSecurityNumber;
+            return result;
+        }
+
+        public override double Pay()
+        {
+            return payRate;
+        }
+    }
+}
