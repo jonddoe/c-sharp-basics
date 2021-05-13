@@ -20,6 +20,7 @@ namespace DragRace
         {
             return _currentSpeed.ToString();
         }
+
         public void UseNitrousOxideEngine()
         {
             _currentSpeed += 25;

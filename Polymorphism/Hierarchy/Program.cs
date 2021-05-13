@@ -14,48 +14,50 @@ namespace Hierarchy
                 Console.WriteLine("Enter animal type:");
                 animalType = Console.ReadLine();
 
-
-                if (animalType != null && animalType.ToLower() == "tiger")
+                switch (animalType.ToLower())
                 {
-                    Console.WriteLine("Enter animal name:");
-                    var animalName = Console.ReadLine();
-                    Console.WriteLine("Enter animal weight:");
-                    double.TryParse(Console.ReadLine(), out var animalWeight);
-                    Console.WriteLine("Enter animal region:");
-                    var animalLivingRegion = Console.ReadLine();
+                    case "tiger":
+                    {
+                        Console.WriteLine("Enter animal name:");
+                        var animalName = Console.ReadLine();
+                        Console.WriteLine("Enter animal weight:");
+                        double.TryParse(Console.ReadLine(), out var animalWeight);
+                        Console.WriteLine("Enter animal region:");
+                        var animalLivingRegion = Console.ReadLine();
 
-                    var newTiger = new Tiger(animalName, animalType, animalWeight, animalLivingRegion);
-                    animalStorage.AddToAnimalStorage(newTiger);
+                        var newTiger = new Tiger(animalName, animalType, animalWeight, animalLivingRegion);
+                        animalStorage.AddToAnimalStorage(newTiger);
 
-                    Console.WriteLine(newTiger.MakeSound() + "\nEnter food:");
-                    var food = Console.ReadLine();
-                    Console.WriteLine("Enter quantity:");
-                    int.TryParse(Console.ReadLine(), out var quantity);
+                        Console.WriteLine(newTiger.MakeSound() + "\nEnter food:");
+                        var food = Console.ReadLine();
+                        Console.WriteLine("Enter quantity:");
+                        int.TryParse(Console.ReadLine(), out var quantity);
 
-                    var newFood = new Meat(food, quantity);
-                    newTiger.Eat(newFood);
+                        var newFood = new Meat(food, quantity);
+                        newTiger.Eat(newFood);
 
-                    Console.WriteLine(newTiger.ShowAnimalInfo());
-                }
-                else if (animalType != null && animalType.ToLower() == "cat")
-                {
-                    Console.WriteLine("Enter animal name:");
-                    var animalName = Console.ReadLine();
-                    Console.WriteLine("Enter animal breed:");
-                    var catBreed = Console.ReadLine();
-                    Console.WriteLine("Enter animal weight:");
-                    double.TryParse(Console.ReadLine(), out var animalWeight);
-                    Console.WriteLine("Enter animal region:");
-                    var animalLivingRegion = Console.ReadLine();
+                        Console.WriteLine(newTiger.ShowAnimalInfo());
+                        break;
+                    }
+                    case "cat":
+                    {
+                        Console.WriteLine("Enter animal name:");
+                        var animalName = Console.ReadLine();
+                        Console.WriteLine("Enter animal breed:");
+                        var catBreed = Console.ReadLine();
+                        Console.WriteLine("Enter animal weight:");
+                        double.TryParse(Console.ReadLine(), out var animalWeight);
+                        Console.WriteLine("Enter animal region:");
+                        var animalLivingRegion = Console.ReadLine();
 
-                    var newCat = new Cat(animalName, animalType, animalWeight, animalLivingRegion, catBreed);
-                    animalStorage.AddToAnimalStorage(newCat);
+                        var newCat = new Cat(animalName, animalType, animalWeight, animalLivingRegion, catBreed);
+                        animalStorage.AddToAnimalStorage(newCat);
 
-                    Console.WriteLine(newCat.MakeSound() + "\nEnter food:");
-                    var food = Console.ReadLine();
-                    Console.WriteLine("Enter quantity:");
-                    int.TryParse(Console.ReadLine(), out var quantity);
-                    if (food != null)
+                        Console.WriteLine(newCat.MakeSound() + "\nEnter food:");
+                        var food = Console.ReadLine();
+                        Console.WriteLine("Enter quantity:");
+                        int.TryParse(Console.ReadLine(), out var quantity);
+
                         switch (food.ToLower())
                         {
                             case "meat":
@@ -72,27 +74,26 @@ namespace Hierarchy
                             }
                         }
 
-                    Console.WriteLine(newCat.ShowAnimalInfo());
-                }
+                        Console.WriteLine(newCat.ShowAnimalInfo());
+                        break;
+                    }
+                    case "mouse":
+                    {
+                        Console.WriteLine("Enter animal name:");
+                        var animalName = Console.ReadLine();
+                        Console.WriteLine("Enter animal weight:");
+                        double.TryParse(Console.ReadLine(), out var animalWeight);
+                        Console.WriteLine("Enter animal region:");
+                        var animalLivingRegion = Console.ReadLine();
 
-                else if (animalType != null && animalType.ToLower() == "mouse")
-                {
-                    Console.WriteLine("Enter animal name:");
-                    var animalName = Console.ReadLine();
-                    Console.WriteLine("Enter animal weight:");
-                    double.TryParse(Console.ReadLine(), out var animalWeight);
-                    Console.WriteLine("Enter animal region:");
-                    var animalLivingRegion = Console.ReadLine();
+                        var newMouse = new Mouse(animalName, animalType, animalWeight, animalLivingRegion);
+                        animalStorage.AddToAnimalStorage(newMouse);
 
-                    var newMouse = new Mouse(animalName, animalType, animalWeight, animalLivingRegion);
-                    animalStorage.AddToAnimalStorage(newMouse);
+                        Console.WriteLine(newMouse.MakeSound() + "\nEnter food:");
+                        var food = Console.ReadLine();
+                        Console.WriteLine("Enter quantity:");
+                        int.TryParse(Console.ReadLine(), out var quantity);
 
-                    Console.WriteLine(newMouse.MakeSound() + "\nEnter food:");
-                    var food = Console.ReadLine();
-                    Console.WriteLine("Enter quantity:");
-                    int.TryParse(Console.ReadLine(), out var quantity);
-
-                    if (food != null)
                         switch (food.ToLower())
                         {
                             case "meat":
@@ -107,36 +108,40 @@ namespace Hierarchy
                                 newMouse.Eat(newFood);
                                 break;
                             }
+                                
                         }
 
-                    Console.WriteLine(newMouse.ShowAnimalInfo());
-                }
-                else if (animalType != null && animalType.ToLower() == "zebra")
-                {
-                    Console.WriteLine("Enter animal name:");
-                    var animalName = Console.ReadLine();
-                    Console.WriteLine("Enter animal weight:");
-                    double.TryParse(Console.ReadLine(), out var animalWeight);
-                    Console.WriteLine("Enter animal region:");
-                    var animalLivingRegion = Console.ReadLine();
+                        Console.WriteLine(newMouse.ShowAnimalInfo());
+                        break;
+                    }
+                    case "zebra":
+                    {
+                        Console.WriteLine("Enter animal name:");
+                        var animalName = Console.ReadLine();
+                        Console.WriteLine("Enter animal weight:");
+                        double.TryParse(Console.ReadLine(), out var animalWeight);
+                        Console.WriteLine("Enter animal region:");
+                        var animalLivingRegion = Console.ReadLine();
 
-                    var newZebra = new Zebra(animalName, animalType, animalWeight, animalLivingRegion);
-                    animalStorage.AddToAnimalStorage(newZebra);
+                        var newZebra = new Zebra(animalName, animalType, animalWeight, animalLivingRegion);
+                        animalStorage.AddToAnimalStorage(newZebra);
 
-                    Console.WriteLine(newZebra.MakeSound() + "\nEnter food:");
-                    var food = Console.ReadLine();
-                    Console.WriteLine("Enter quantity:");
-                    int.TryParse(Console.ReadLine(), out var quantity);
+                        Console.WriteLine(newZebra.MakeSound() + "\nEnter food:");
+                        var food = Console.ReadLine();
+                        Console.WriteLine("Enter quantity:");
+                        int.TryParse(Console.ReadLine(), out var quantity);
 
-                    var newFood = new Vegetable(food, quantity);
-                    newZebra.Eat(newFood);
+                        var newFood = new Vegetable(food, quantity);
+                        newZebra.Eat(newFood);
 
-                    Console.WriteLine(newZebra.ShowAnimalInfo());
+                        Console.WriteLine(newZebra.ShowAnimalInfo());
+                        break;
+                    }
                 }
 
                 Console.ReadLine();
                 Console.Clear();
-            } while (animalType != null && animalType.ToLower() != "end");
+            } while (animalType.ToLower() != "end");
 
             Console.WriteLine(animalStorage);
             Console.Read();

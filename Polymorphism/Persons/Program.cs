@@ -23,6 +23,7 @@ namespace Persons
                 Address = "3rd street",
                 Id = 711
             };
+
             studentEntry.Display();
             employeeEntry.Display();
             Console.Read();

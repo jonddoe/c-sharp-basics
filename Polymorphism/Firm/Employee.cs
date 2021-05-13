@@ -2,21 +2,21 @@ namespace Firm
 {
     public class Employee : StaffMember
     {
-        private string socialSecurityNumber;
+        private string _socialSecurityNumber;
 
         protected double payRate;
 
         public Employee(string eName, string eAddress, string ePhone, string socSecNumber, double rate) : base(eName,
             eAddress, ePhone)
         {
-            socialSecurityNumber = socSecNumber;
+            _socialSecurityNumber = socSecNumber;
             payRate = rate;
         }
 
         public override string ToString()
         {
             var result = base.ToString();
-            result += "\nSocial Security Number: " + socialSecurityNumber;
+            result += "\nSocial Security Number: " + _socialSecurityNumber;
             return result;
         }
 
