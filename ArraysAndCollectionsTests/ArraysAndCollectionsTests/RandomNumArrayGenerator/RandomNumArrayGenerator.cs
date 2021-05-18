@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ArraysExercise6
+namespace RandomNumArrayGenerator
 {
     public class RandomNumArrayGenerator
     {
@@ -20,7 +20,7 @@ namespace ArraysExercise6
                 copyOfRandomValueArray[i] = randomValueArray[i];
             }
 
-            randomValueArray[randomValueArray.Length] = -7;
+            randomValueArray[9] = -7;
             return
                 $"Array 1: {string.Join(" ", randomValueArray)}\nArray 2: {string.Join(" ", copyOfRandomValueArray)}";
         }

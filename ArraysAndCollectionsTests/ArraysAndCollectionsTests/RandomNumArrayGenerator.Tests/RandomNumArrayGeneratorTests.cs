@@ -2,8 +2,6 @@
 using System;
 using Xunit;
 using Assert = Xunit.Assert;
-using RandomNumArrayGenerator;
-using ArraysExercise6;
 
 namespace RandomNumArrayGenerator.Tests
 {
@@ -11,14 +9,14 @@ namespace RandomNumArrayGenerator.Tests
     public class RandomNumArrayGeneratorTests
     {
         [Fact]
-        public void ArgumentsSidesOfRectangle_ReturnsAreaOfRectangle()
+        public void Generates2RandomValueArrays_ReturnsMinus7AtTheEndOfFirst()
         {
             //arrange
-            const string expected = "Array 1: 75 82 45 73 53 32 86 56 51 -7\nArray 2: 75 82 45 73 53 32 86 56 51 77";
+            const string expected = "-7";
             //act
             var actual = RandomNumArrayGenerator.GenerateRandomArray();
             //assert
-            Assert.Equal(expected, actual);
+            Assert.Equal(expected, actual.Substring(actual.IndexOf("\n", StringComparison.Ordinal)-2, 2));
         }
     }
 }
