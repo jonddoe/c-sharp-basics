@@ -1,4 +1,4 @@
-﻿namespace Exercise_2
+﻿namespace OddOrEven
 {
     public class OddOrEven
     {

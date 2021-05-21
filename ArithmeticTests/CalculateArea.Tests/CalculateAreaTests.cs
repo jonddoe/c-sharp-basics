@@ -8,7 +8,7 @@ namespace CalculateArea.Tests
     public class CalculateAreaTests
     {
         [Fact]
-        public void ArgumentAreaOfCircleRadius_ReturnsAreaOfCircle()
+        public void AreaOfCircle_ArgumentAreaOfCircleRadius_ReturnsAreaOfCircle()
         {
             //arrange
             const string expected = "92.71";
@@ -19,7 +19,7 @@ namespace CalculateArea.Tests
         }
 
         [Fact]
-        public void ArgumentsSidesOfRectangle_ReturnsAreaOfRectangle()
+        public void AreaOfCircle_ArgumentsSidesOfRectangle_ReturnsAreaOfRectangle()
         {
             //arrange
             const string expected = "38.68";
@@ -30,7 +30,7 @@ namespace CalculateArea.Tests
         }
 
         [Fact]
-        public void ArgumentsBaseAndHeightOfTriangle_ReturnsAreaOfTriangle()
+        public void AreaOfCircle_ArgumentsBaseAndHeightOfTriangle_ReturnsAreaOfTriangle()
         {
             //arrange
             const string expected = "11.84";

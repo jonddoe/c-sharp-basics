@@ -1,4 +1,4 @@
-﻿namespace Exercise_1
+﻿namespace Any15
 {
     public class Any15
     {

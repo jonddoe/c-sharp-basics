@@ -368,6 +368,3 @@ obj/
 [Tt]est[Rr]esult*
 #Nuget packages folder
 packages/
-
-/**/*Properties/AssemblyInfo.cs
-

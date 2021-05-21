@@ -8,7 +8,7 @@ namespace SalaryCalculator.Tests
     public class SalaryCalculatorTests
     {
         [Fact]
-        public void BasePayLessThanAllowedAndHoursMoreThanAllowed_ReturnsCalculationErrorMessage()
+        public void SalaryCalculation_BasePayLessThanAllowedAndHoursMoreThanAllowed_ReturnsCalculationErrorMessage()
         {
             //arrange
             const string expected = "Employee 1: Error in salary calculation!";
@@ -19,7 +19,7 @@ namespace SalaryCalculator.Tests
         }
 
         [Fact]
-        public void BasePayLessThanAllowed_ReturnsCalculationErrorMessage()
+        public void SalaryCalculation_BasePayLessThanAllowed_ReturnsCalculationErrorMessage()
         {
             //arrange
             const string expected = "Employee 1: Error in salary calculation!";
@@ -30,7 +30,7 @@ namespace SalaryCalculator.Tests
         }
 
         [Fact]
-        public void HoursMoreThanAllowed_ReturnsCalculationErrorMessage()
+        public void SalaryCalculation_HoursMoreThanAllowed_ReturnsCalculationErrorMessage()
         {
             //arrange
             const string expected = "Employee 1: Error in salary calculation!";
@@ -41,7 +41,7 @@ namespace SalaryCalculator.Tests
         }
 
         [Fact]
-        public void CalculateSalaryNoOvertime_ReturnsCalculatedSalary()
+        public void SalaryCalculation_CalculateSalaryNoOvertime_ReturnsCalculatedSalary()
         {
             //arrange
             const string expected = "Employee 2 salary is: 320.00";
@@ -52,7 +52,7 @@ namespace SalaryCalculator.Tests
         }
 
         [Fact]
-        public void CalculateOvertime_ReturnsCalculatedSalary()
+        public void SalaryCalculation_CalculateOvertime_ReturnsCalculatedSalary()
         {
             //arrange
             const string expected =

@@ -1,15 +1,14 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Exercise_2;
 using Assert = Xunit.Assert;
 using Xunit;
 
-namespace IsOddOrEven.Tests
+namespace OddOrEven.Tests
 {
     [TestClass]
-    public class IsOddOrEvenTests
+    public class OddOrEvenTests
     {
         [Fact]
-        public void NumberIsEven_returnsEven()
+        public void OddOrEven_NumberIsEven_returnsEven()
         {
             //arrange
             const string expected = "Even";
@@ -20,7 +19,7 @@ namespace IsOddOrEven.Tests
         }
 
         [Fact]
-        public void NumberIsOdd_returnsOdd()
+        public void OddOrEven_NumberIsOdd_returnsOdd()
         {
             //arrange
             const string expected = "Odd";

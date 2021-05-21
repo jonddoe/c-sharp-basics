@@ -8,7 +8,7 @@ namespace GravityCalculator.Tests
     public class GravityCalculatorTests
     {
         [Fact]
-        public void Argument10_returnsThisString()
+        public void CalculateFallingObject_Argument10_returnsThisString()
         {
             //arrange
             const string expected = "The object's position after 10 seconds is -490.5 m.";

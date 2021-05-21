@@ -1,14 +1,14 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Assert = Xunit.Assert;
 using Xunit;
+using Assert = Xunit.Assert;
 
-namespace Exercise_1.Tests
+namespace Any15.Tests
 {
     [TestClass]
     public class Any15Tests
     {
         [Fact]
-        public void ArgumentA15_returnsTrue()
+        public void IsFifteen_ArgumentA15_returnsTrue()
         {
             //arrange
             const bool expected = true;
@@ -19,7 +19,7 @@ namespace Exercise_1.Tests
         }
 
         [Fact]
-        public void ArgumentB15_returnsTrue()
+        public void IsFifteen_ArgumentB15_returnsTrue()
         {
             //arrange
             const bool expected = true;
@@ -30,7 +30,7 @@ namespace Exercise_1.Tests
         }
 
         [Fact]
-        public void ArgumentDifferenceIs15_returnsTrue()
+        public void IsFifteen_ArgumentDifferenceIs15_returnsTrue()
         {
             //arrange
             const bool expected = true;
@@ -41,7 +41,7 @@ namespace Exercise_1.Tests
         }
 
         [Fact]
-        public void ArgumentComboIsNot15_returnsFalse()
+        public void IsFifteen_ArgumentComboIsNot15_returnsFalse()
         {
             //arrange
             const bool expected = false;
@@ -53,7 +53,7 @@ namespace Exercise_1.Tests
 
         [Theory]
         [InlineData(8, 7, true)]
-        public void ArgumentSumIs15_returnsTrue(int a, int b, bool expected)
+        public void IsFifteen_ArgumentSumIs15_returnsTrue(int a, int b, bool expected)
         {
             //arrange
             //act   
