@@ -8,7 +8,7 @@ namespace WordCount
         public static string LineWordCharCount()
         {
             string textRaw;
-            using (var sr = new StreamReader("../WordCount/lear.txt"))
+            using (var sr = new StreamReader("../lear.txt"))
             {
                 textRaw = sr.ReadToEnd();
             }

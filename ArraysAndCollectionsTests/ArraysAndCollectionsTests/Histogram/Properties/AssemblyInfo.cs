@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ArraysAndCollectionsTests")]
+[assembly: AssemblyTitle("Histogram")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ArraysAndCollectionsTests")]
+[assembly: AssemblyProduct("Histogram")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("328cfb93-c672-4219-9181-4d3368c78564")]
+[assembly: Guid("671a2e89-e07b-4d16-a4a2-337aa0109bc3")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -1,5 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 using Xunit;
 using Assert = Xunit.Assert;
 
@@ -9,14 +8,14 @@ namespace WordCount.Tests
     public class WordCountTests
     {
         [Fact]
-        public void Generates2RandomValueArrays_ReturnsMinus7AtTheEndOfFirst()
+        public void LineWordCharCount_LearTxt_ReturnsCorrectCount()
         {
             //arrange
-            const string expected = "-7";
+            const string expected = "Lines = 6\nWords = 43\nChars = 252";
             //act
             var actual = WordCount.LineWordCharCount();
             //assert
-            Assert.Equal(expected, actual.Substring(actual.IndexOf("\n", StringComparison.Ordinal) - 2, 2));
+            Assert.Equal(expected, actual);
         }
     }
 }

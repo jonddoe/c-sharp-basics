@@ -8,22 +8,34 @@ namespace IsNumberHappy.Tests
     public class IsNumberHappyTests
     {
         [Fact]
-        public void Argument139_ReturnsTrue()
+        public void IsHappy_Argument139_ReturnsHappy()
         {
             //arrange
-            const bool expected = true;
+            const string expected = "Happy";
             //act
             var actual = IsNumberHappy.IsHappy(139);
             //assert
             Assert.Equal(expected, actual);
         }
+
         [Fact]
-        public void Argument138_ReturnsFalse()
+        public void IsHappy_Argument138_ReturnsNotHappy()
         {
             //arrange
-            const bool expected = false;
+            const string expected = "Not Happy";
             //act
             var actual = IsNumberHappy.IsHappy(138);
+            //assert
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void Factorial_Argument139_Returns91()
+        {
+            //arrange
+            const int expected = 91;
+            //act
+            var actual = IsNumberHappy.Factorial("139");
             //assert
             Assert.Equal(expected, actual);
         }
