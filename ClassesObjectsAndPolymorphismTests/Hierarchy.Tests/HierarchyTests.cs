@@ -13,8 +13,8 @@ namespace Hierarchy.Tests
         {
             //arrange
             const string expected = "zzz";
-            //act
             var test = new Zebra("Bob", "zebra", 82, "Africa");
+            //act
             var actual = test.MakeSound();
             //assert
             Assert.Equal(expected, actual);
@@ -25,10 +25,10 @@ namespace Hierarchy.Tests
         {
             //arrange
             const string expected = "zebra [Bob, 82, Africa, 5]";
-            //act
             var test = new Zebra("Bob", "zebra", 82, "Africa");
             var testFood = new Vegetable("vegetables", 5);
             test.Eat(testFood);
+            //act
             var actual = test.ShowAnimalInfo();
             //assert
             Assert.Equal(expected, actual);
@@ -39,10 +39,10 @@ namespace Hierarchy.Tests
         {
             //arrange
             const string expected = "tiger [Bob, 82, Africa, 2]";
-            //act
             var test = new Tiger("Bob", "tiger", 82, "Africa");
             var testFood = new Meat("meat", 2);
             test.Eat(testFood);
+            //act
             var actual = test.ShowAnimalInfo();
             //assert
             Assert.Equal(expected, actual);
@@ -53,10 +53,10 @@ namespace Hierarchy.Tests
         {
             //arrange
             const string expected = "cat [Bob, Persian, 2, Africa, 5]";
-            //act
             var test = new Cat("Bob", "cat", 2, "Africa", "Persian");
             var testFood = new Vegetable("vegetables", 5);
             test.Eat(testFood);
+            //act
             var actual = test.ShowAnimalInfo();
             //assert
             Assert.Equal(expected, actual);
@@ -67,9 +67,9 @@ namespace Hierarchy.Tests
         {
             //arrange
             const string expected = "Cats are not eating that type of food!";
-            //act
             var test = new Cat("Bob", "cat", 2, "LV", "Persian");
             var testFood = new Meat("dfdw", 2);
+            //act
             var ex = Assert.Throws<ArgumentException>(() => test.Eat(testFood));
             //assert
             Assert.Equal(expected, ex.Message);
@@ -80,8 +80,8 @@ namespace Hierarchy.Tests
         {
             //arrange
             const string expected = "pii";
-            //act
             var test = new Mouse("Stewart", "mouse", 1, "Basement");
+            //act
             var actual = test.MakeSound();
             //assert
             Assert.Equal(expected, actual);
@@ -92,9 +92,8 @@ namespace Hierarchy.Tests
         {
             //arrange
             const string expected = "ROAAR!!!";
-            //act
             var test = new Tiger("Bob", "tiger", 82, "Africa");
-
+            //act
             var actual = test.MakeSound();
             //assert
             Assert.Equal(expected, actual);
@@ -105,9 +104,9 @@ namespace Hierarchy.Tests
         {
             //arrange
             const string expected = "mouse [Stewart, 1, Basement, 5]";
-            //act
             var test = new Mouse("Stewart", "mouse", 1, "Basement");
             var testFood = new Meat("meat", 5);
+            //act
             test.Eat(testFood);
             var actual = test.ShowAnimalInfo();
             //assert
@@ -119,7 +118,6 @@ namespace Hierarchy.Tests
         {
             //arrange
             const string expected = "mouse [Stewart, 1, Basement, 5], cat [Bob, Persian, 2, Africa, 0]";
-            //act
             var test = new Mouse("Stewart", "mouse", 1, "Basement");
             var test2 = new Cat("Bob", "cat", 2, "Africa", "Persian");
             var testFood = new Meat("meat", 5);
@@ -127,6 +125,7 @@ namespace Hierarchy.Tests
             var testStorage = new AnimalStorage();
             testStorage.AddToAnimalStorage(test);
             testStorage.AddToAnimalStorage(test2);
+            //act
             var actual = testStorage.ToString();
             //assert
             Assert.Equal(expected, actual);

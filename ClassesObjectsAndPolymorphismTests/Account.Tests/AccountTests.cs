@@ -12,9 +12,8 @@ namespace Account.Tests
         {
             //arrange
             const string expected = "Jon: 100";
-            //act
             var test = new Account("Jon", 100);
-
+            //act
             var actual = test.ToString();
             //assert
             Assert.Equal(expected, actual);
@@ -25,9 +24,9 @@ namespace Account.Tests
         {
             //arrange
             const string expected = "Jon: 400";
-            //act
             var test = new Account("Jon", 100);
             test.Deposit(300);
+            //act
             var actual = test.ToString();
             //assert
             Assert.Equal(expected, actual);
@@ -38,9 +37,9 @@ namespace Account.Tests
         {
             //arrange
             const string expected = "Jon: 45";
-            //act
             var test = new Account("Jon", 100);
             test.Withdrawal(55);
+            //act
             var actual = test.ToString();
             //assert
             Assert.Equal(expected, actual);
@@ -51,9 +50,8 @@ namespace Account.Tests
         {
             //arrange
             const double expected = 103.55;
-            //act
             var test = new Account("Jon", 103.55);
-
+            //act
             var actual = test.Balance();
             //assert
             Assert.Equal(expected, actual);
@@ -64,10 +62,10 @@ namespace Account.Tests
         {
             //arrange
             const double expected = 101.65;
-            //act
             var test = new Account("Jon", 103.55);
             test.Deposit(2.15);
             test.Withdrawal(4.05);
+            //act
             var actual = test.Balance();
             //assert
             Assert.Equal(expected, actual);
@@ -78,10 +76,9 @@ namespace Account.Tests
         {
             //arrange
             const double expected = 55;
-            //act
             var test = new Account("Jon", 100);
             var test2 = new Account("Bob", 0);
-
+            //act
             new Transfer(test, test2, 55);
             var actual = test2.Balance();
             //assert
@@ -93,11 +90,10 @@ namespace Account.Tests
         {
             //arrange
             const double expected = 45;
-            //act
             var test = new Account("Jon", 100);
             var test2 = new Account("Bob", 0);
-
             new Transfer(test, test2, 55);
+            //act
             var actual = test.Balance();
             //assert
             Assert.Equal(expected, actual);

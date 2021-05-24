@@ -12,9 +12,9 @@ namespace Date.Tests
         {
             //arrange
             const string expected = "3/12/1989";
-            //act
             var test = new Date();
             test.SetDate(3, 12, 1989);
+            //act
             var actual = test.DisplayDate();
             //assert
             Assert.Equal(expected, actual);

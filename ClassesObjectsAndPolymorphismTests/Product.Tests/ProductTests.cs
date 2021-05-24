@@ -12,9 +12,8 @@ namespace Product.Tests
         {
             //arrange
             const string expected = "Logitech mouse, 70 EUR, 14 Units";
-            //act
             var mouse = new Product("Logitech mouse", 70.00, 14);
-
+            //act
             var actual = mouse.PrintProduct();
             //assert
             Assert.Equal(expected, actual);
@@ -25,10 +24,10 @@ namespace Product.Tests
         {
             //arrange
             const string expected = "Logitech mouse, 99.99 EUR, 44 Units";
-            //act
             var mouse = new Product("Logitech mouse", 70.00, 14);
             mouse.ChangePrice(99.99);
             mouse.ChangeAmount(44);
+            //act
             var actual = mouse.PrintProduct();
             //assert
             Assert.Equal(expected, actual);
@@ -39,10 +38,10 @@ namespace Product.Tests
         {
             //arrange
             const string expected = "iPhone 5s, 889.99 EUR, 74 Units";
-            //act
             var phone = new Product("iPhone 5s", 999.99, 3);
             phone.ChangePrice(889.99);
             phone.ChangeAmount(74);
+            //act
             var actual = phone.PrintProduct();
             //assert
             Assert.Equal(expected, actual);
